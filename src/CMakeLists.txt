@@ -54,5 +54,5 @@ configure_file(
 find_package(Libssh2 CONFIG REQUIRED)
 
 # 이 프로젝트의 실행 파일에 소스를 추가합니다.
-add_executable (SSH2Example "SSH2Example.c" "SSH2Example.h" "config_example.h" )
+add_executable (SSH2Example "SSH2Example.cpp" "SSH2Example.h" "config_example.h" )
 target_link_libraries(SSH2Example   Libssh2::libssh2 ${LIBRARIES} )
