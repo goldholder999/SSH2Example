@@ -51,8 +51,8 @@ configure_file(
   ${CMAKE_CURRENT_SOURCE_DIR}/config_example.h)
 
 
-find_package(Libssh2 CONFIG REQUIRED)
-
+#find_package(Libssh2 CONFIG REQUIRED)
+find_package(Libssh2 REQUIRED)
 # 이 프로젝트의 실행 파일에 소스를 추가합니다.
 add_executable (SSH2Example "SSH2Example.cpp" "SSH2Example.h" "config_example.h" )
 target_link_libraries(SSH2Example   Libssh2::libssh2 ${LIBRARIES} )
